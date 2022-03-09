@@ -29,6 +29,10 @@ Then the original dataframe plus the encode_df were merged before splitting the 
     
     -Steps taken to increase the model performance included binning the INCOME_AMT feature due to the enormous range of numbers.  One attempt included dropping the                   SPECIAL_CONSIDERATIONS column but this had no affect.  Multiple runs with different node amounts and a second layer and third layer of nodes.  The activation type was           changed to elu but this did not improve the accuracy score.  It decreased it.
     
+  ## Summary
+  
+  After multiple runs, the deep learning model that ran the best was with just one layer of 8 nodes.  Another model that could be used is a logistic regression model through sklearn.  Supervised learning would still be beneficial due to having one target to the model. Logistic regression can utilized categorical and numerical data.  It is also similar to the neural network model. 
+    
 
 
 
