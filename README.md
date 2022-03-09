@@ -18,7 +18,15 @@ Then the original dataframe plus the encode_df were merged before splitting the 
 ## Results
   
   -Data Preprocessing
-    -  
+    -  The target of the model is the IS_SUCCESFUL data
+    -  The features are all values within the dataframe except the IS_SUCCESSFUL data
+    -   Variables that are removed are the EIN and NAME.  They do not determine theh outcome of whether or not the funding is successful.
+   
+  - Compiling, Training, and Evaluating the Model
+    -I selected 8 nodes for the first hidden layer and no other layers after multiple runs.  When I lowered or raised the number of nodes in the first layer from 8 the accuracy      score went down.  Using only one layer gave me the best results.
+    
+    -The target model performance was not achieved.
+    
 
 
 
