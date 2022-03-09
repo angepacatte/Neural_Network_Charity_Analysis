@@ -25,7 +25,9 @@ Then the original dataframe plus the encode_df were merged before splitting the 
   - Compiling, Training, and Evaluating the Model
     -I selected 8 nodes for the first hidden layer and no other layers after multiple runs.  When I lowered or raised the number of nodes in the first layer from 8 the accuracy      score went down.  Using only one layer gave me the best results.
     
-    -The target model performance was not achieved.
+    -The target model performance was not achieved.  The original accuracy was 0.569. In the optimization file the accuracy score was raised to 0.722.  Just slightly under the       target of 0.75 or 75%.
+    
+    -Steps taken to increase the model performance included binning the INCOME_AMT feature due to the enormous range of numbers.  One attempt included dropping the                   SPECIAL_CONSIDERATIONS column but this had no affect.  Multiple runs with different node amounts and a second layer and third layer of nodes.  The activation type was           changed to elu but this did not improve the accuracy score.  It decreased it.
     
 
 
